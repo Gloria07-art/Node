@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs')%>
+
+  <body>
+    <%-include('./partials/nav.ejs')%>
+    <h2>The SPORT</h2>
+    <p>Lets see the curriculum vitae</p>
+
+    <h2>List of registered students</h2>
+
+    <p><%=students.length %></p>
+    <% if(students.length> 0 {%> 
+   <% students.forEach((result)=>{%>
+    <p>Name:<%=result.name%></p>
+    <p>Surname:<%=result.surname%></p>
+    <p>Age:<%=result.name%></p>
+    <%})%>
+<%}else{%>
+    <h4>No registered students</h4>
+    <%} %>
